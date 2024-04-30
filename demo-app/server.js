@@ -38,6 +38,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to demo application." });
 });
 
+app.get("getproducts/products", (req, res) => {
+  res.json({ message: "TEQUILA, TOMATE, MASA, PEPPERONI, QUESO, SALAME, COCA-COLA." });
+});
+
 require("./app/routes/turorial.routes")(app);
 
 // set port, listen for requests
