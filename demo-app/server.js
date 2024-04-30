@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to demo application." });
 });
 
-app.get("getproducts/products", (req, res) => {
+app.get("/getproducts/products", (req, res) => {
   res.json({ message: "TEQUILA, TOMATE, MASA, PEPPERONI, QUESO, SALAME, COCA-COLA." });
 });
 
